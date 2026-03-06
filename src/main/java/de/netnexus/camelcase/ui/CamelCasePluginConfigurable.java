@@ -1,8 +1,9 @@
-package de.netnexus.CamelCasePlugin;
+package de.netnexus.camelcase.ui;
 
 import com.intellij.openapi.options.ConfigurationException;
 import com.intellij.openapi.options.SearchableConfigurable;
 import com.intellij.openapi.project.Project;
+import de.netnexus.camelcase.config.CamelCaseConfig;
 import org.jetbrains.annotations.Nls;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
