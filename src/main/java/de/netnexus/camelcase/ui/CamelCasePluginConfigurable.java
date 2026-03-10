@@ -71,7 +71,9 @@ public class CamelCasePluginConfigurable implements SearchableConfigurable {
 
     @Override
     public void apply() throws ConfigurationException {
-        mGUI.apply();
+        if (mGUI != null) {
+            mGUI.apply();
+        }
     }
 
     @Override
