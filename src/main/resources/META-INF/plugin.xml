@@ -25,7 +25,7 @@
         <action id="de.netnexus.camelcase.action.ToggleCamelCase" class="de.netnexus.camelcase.action.ToggleCamelCaseAction"
                 text="Toggle Camel Case"
                 description="Switches between CamelCase, camelCase and snake_case">
-            <!-- <add-to-group group-id="EditSmartGroup" anchor="after" relative-to-action="EditorToggleCase"/> -->
+            <add-to-group group-id="EditSmartGroup" anchor="after" relative-to-action="EditorToggleCase"/>
             <keyboard-shortcut keymap="$default" first-keystroke="shift alt U"/>
         </action>
     </actions>
@@ -34,7 +34,7 @@
         <!-- Add your extensions here -->
         <projectService
                 serviceImplementation="de.netnexus.camelcase.config.CamelCaseConfig"/>
-        <projectConfigurable groupId="editor" displayName="Camel Case" id="preferences.CamelCasePlugin"
+        <projectConfigurable displayName="Camel Case" id="preferences.CamelCasePlugin"
                              instance="de.netnexus.camelcase.ui.CamelCasePluginConfigurable"/>
     </extensions>
 </idea-plugin>

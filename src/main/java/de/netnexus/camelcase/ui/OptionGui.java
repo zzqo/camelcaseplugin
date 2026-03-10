@@ -1,6 +1,7 @@
 package de.netnexus.camelcase.ui;
 
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.util.Comparing;
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import de.netnexus.camelcase.config.CamelCaseConfig;
@@ -96,6 +97,15 @@ public class OptionGui {
         // TODO: place custom component creation code here
     }
 
+    public boolean isModified() {
+        return !Comparing.equal(mConfig.cb1State, cb1.isSelected()) ||
+                !Comparing.equal(mConfig.cb2State, cb2.isSelected()) ||
+                !Comparing.equal(mConfig.cb3State, cb3.isSelected()) ||
+                !Comparing.equal(mConfig.cb4State, cb4.isSelected()) ||
+                !Comparing.equal(mConfig.cb5State, cb5.isSelected()) ||
+                !Comparing.equal(mConfig.cb6State, cb6.isSelected()) ||
+                !Comparing.equal(mConfig.cb7State, cb7.isSelected());
+    }
 
     public void apply() {
         mConfig.setcb1State(cb1.isSelected());

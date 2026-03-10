@@ -66,7 +66,7 @@ public class CamelCasePluginConfigurable implements SearchableConfigurable {
 
     @Override
     public boolean isModified() {
-        return true;
+        return mGUI.isModified();
     }
 
     @Override
